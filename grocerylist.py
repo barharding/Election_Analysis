@@ -1,0 +1,9 @@
+my_list=["apples","bananas","lettuce","cabbage"]
+print(my_list)
+my_list.append("cucumber")
+my_list[2]="tomato"
+my_list.append("banana")
+print(my_list)
+my_list[2]="lettuce"
+my_list[1]="tomato"
+print(my_list)
