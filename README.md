@@ -15,7 +15,7 @@ A Colorado Board of Elections employee has given you the following tasks to comp
 ## Election Audit Results
 The analysis of the election show that: 
 
--	There were "x" votes cast in the election.
+-	There were 369,711 votes cast in the election.
 -	The number of votes per county were:
   - Jefferson had 10.% of the vote and 38,855 votes.
   - Denver had 82.8% of the vote and 306,055 votes.
@@ -24,17 +24,17 @@ The analysis of the election show that:
 The county with the largest turnout was Denver
 
 -	The candidates were:
--	Charles Casper Stockham
--	Diana DeGette
--	Raymon Anthony Doane
--	
+  -	Charles Casper Stockham
+  -	Diana DeGette
+  -	Raymon Anthony Doane
+
 -	The candidate results were:
   -	Charles Casper Stockham received 23%" of the vote and 85,213 number of votes.
   - Diana DeGette received 73.8% of the vote and 272,892 number of votes.
   - Raymon Anthony Doane received 3.1% of the vote and 11,606 number of votes.
 
 -	The winner of the election was:
--	Diana DeGette , who received 73.8% of the vote and 272,892 number of votes.
+  -	Diana DeGette , who received 73.8% of the vote and 272,892 number of votes.
 
 ## Election Audit Summary
 In a summary statement, provide a business proposal to the election commission on how this script can be used—with some modifications—for any election. Give at least two examples of how this script can be modified to be used for other elections.
