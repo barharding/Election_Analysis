@@ -14,8 +14,47 @@ The Colorado Board of Elections requires a tabulation of the election results.  
 -	Software: Python 3.7, Visual Studio Code, l.63.2
 
 ## Election Audit Results
-The analysis of the election show that: 
-sldkdkdkdkd
+The election results python script, tabulates its results from a raw data file named ***election_results.csv***.  This file contains the following three columns of data: Ballot ID, Count, and Candidate Voted for. 
+
+The first section of the script initializes a number of variables, lists & dictionaries to track:
+- total_votes is a variable used to store the Total # of votes
+- totalcounty_votes is a variable used to store the Total # of votes per county
+- candidate_options is a list used to store a unique list of candidate names contained in the file
+- candidate_votes is a dictionary used to store the candidate and number of votes they received
+- county_list is a list used to store a unitque list of counties in the file
+- county_votes is a dictionary used to store the county and number of votes it received
+- winning_candidate
+- winning_count is a variable used to store the count for the winning candidate
+- winning_percentage is a variable used to store the percentage for the winning candidate
+- w_county is a variable used to store the name of the winning county
+- wcounty_count is a variable used to store the count for the winning county
+- wcounty_percentage is a variable used to store the percentage for the winning candidate
+
+````python
+# Initialize a total vote counter.
+total_votes = 0
+
+# Initialize a county vote
+totalcounty_votes=0
+
+# Candidate Options and candidate votes.
+candidate_options = []
+candidate_votes = {}
+
+# 1: Create a county list and county votes dictionary.
+county_list =[]
+county_votes={}
+
+# Track the winning candidate, vote count and percentage
+winning_candidate = ""
+winning_count = 0
+winning_percentage = 0
+
+# 2: Track the largest county and county voter turnout.
+w_county =""
+wcounty_count=0
+wcounty_percentage=0
+````
 
 ### Total Number of Votes Cast
 
