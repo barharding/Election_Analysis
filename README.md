@@ -33,6 +33,30 @@ The analysis of the election show that:
 
 - The county with the largest turnout was Denver
 
+````
+    # 6a: Write a for loop to get the county from the county dictionary.
+    for county_name in county_votes:
+        # 6b: Retrieve the county vote count.
+        totalcountyvotes = county_votes.get(county_name)
+        # 6c: Calculate the percentage of votes for the county.
+        
+        countyvote_percentage = float(totalcountyvotes) / float(total_votes) *100
+
+         # 6d: Print the county results to the terminal.
+        county_results = (
+            f"{county_name}: {countyvote_percentage:.1f}% ({totalcountyvotes:,})\n")
+        print(county_results)
+
+         # 6e: Save the county votes to a text file.
+        txt_file.write(county_results)
+
+         # 6f: Write an if statement to determine the winning county and get its vote count.
+        if (totalcountyvotes > wcounty_count) and (countyvote_percentage > wcounty_percentage):
+            wcounty_count = totalcountyvotes
+            w_county = county_name
+            wcounty_percentage = countyvote_percentage   
+````
+
 - The candidates were:
   - Charles Casper Stockham
   - Diana DeGette
