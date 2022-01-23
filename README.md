@@ -184,18 +184,17 @@ The county with the largest turnout was ***Denver***.
             winning_candidate = candidate_name
             winning_percentage = vote_percentage
 ````
-### Results Summary
-
-The results were tabulated through a python script and are shown in ***figure 1***.  This script reads the raw election_results.csv data file and performs a number of calculations to produce the results.  In addition this script writes the results to a results.txt file for future reference.
-
-***Figure 1: Terminal Output of Election Results python script***
 
 ![Election Results Terminal](/resources/Terminal_Output.png)
 
 ## Election Audit Summary
 In a summary statement, provide a business proposal to the election commission on how this script can be used—with some modifications—for any election. Give at least two examples of how this script can be modified to be used for other elections.
 
+### Results Summary
 
+The results were tabulated through a python script and are shown in ***figure 1***.  This script reads the raw election_results.csv data file and performs a number of calculations to produce the results.  In addition this script writes the results to a results.txt file for future reference.
+
+***Figure 1: Terminal Output of Election Results python script***
 
 
 
