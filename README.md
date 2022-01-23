@@ -16,7 +16,7 @@ The Colorado Board of Elections requires a tabulation of the election results.  
 ## Election Audit Results
 The election results python script, tabulates its results from a raw data file named ***election_results.csv***.  This file contains the following three columns of data: Ballot ID, Count, and Candidate Voted for. 
 
-The first section of the script initializes a number of variables, lists & dictionaries to contain values or results.
+The first section of the script initializes a number of variables, lists & dictionaries to store values or results.  In addition, these are used in a calculations in the code.
 
 ````python
 # Initialize a total vote counter.
@@ -43,6 +43,51 @@ w_county =""
 wcounty_count=0
 wcounty_percentage=0
 ````
+The next major section of the code initiates a nested for loop within a with clause.  This for loop iterates through the file rows and does five things:
+1. calculates the total # of votes cast
+2. populates the candidates_options list with the candidate name
+3. populates the candidate_votes dictionary with candidate name and total number of votes
+4. populates the county_list list with the county name
+5. populates the county_votes with the county name and total number of votes
+
+````python
+    for row in reader:
+
+        # Add to the total vote count
+        total_votes = total_votes + 1
+
+        # Get the candidate name from each row.
+        candidate_name = row[2]
+
+        # 3: Extract the county name from each row.
+        county_name = row[1]
+
+        # If the candidate does not match any existing candidate add it to
+        # the candidate list
+        if candidate_name not in candidate_options:
+
+            # Add the candidate name to the candidate list.
+            candidate_options.append(candidate_name)
+
+            # And begin tracking that candidate's voter count.
+            candidate_votes[candidate_name] = 0
+
+        # Add a vote to that candidate's count
+        candidate_votes[candidate_name] += 1
+
+        # 4a: Write an if statement that checks that the
+        # county does not match any existing county in the county list.
+        if county_name not in county_list:
+        
+            # 4b: Add the existing county to the list of counties.
+            county_list.append(county_name)
+
+            # 4c: Begin tracking the county's vote count.
+            county_votes[county_name] =0
+
+        # 5: Add a vote to that county's vote count.
+        county_votes[county_name] += 1
+````
 
 ### Total Number of Votes Cast
 
@@ -64,6 +109,7 @@ wcounty_percentage=0
   - ***Denver*** had ***82.8%*** of the vote and ***306,055*** votes.
   - ***Arapahoe*** had ***6.7%*** of the vote and ***24,801*** votes.
 
+- In the code block we see a for loop being in
 ````python
     # 6a: Write a for loop to get the county from the county dictionary.
     for county_name in county_votes:
