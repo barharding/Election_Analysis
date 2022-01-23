@@ -151,8 +151,7 @@ The second **if** statement:
 ````
 
 -   The county with the largest turnout was ***Denver***.
-
-This code block calculates the largest turnout using a conditional **if** as well as the **And** operator.  This code block is nested within a **for loop** which is iterating to calculate the county votes and percentages.  
+-   This code block calculates the largest turnout using a conditional **if** as well as the **And** operator.  This code block is nested within a **for loop** which is iterating to calculate the county votes and percentages.  
 
 ````python
          # 6f: Write an if statement to determine the winning county and get its vote count.
