@@ -75,12 +75,9 @@ The analysis of the election show that:
         # terminal.
         print(candidate_results)
         #  Save the candidate results to our text file.
-        
+````        
   - The winner of the election was:
   - Diana DeGette , who received 73.8% of the vote and 272,892 number of votes.
-
-txt_file.write(candidate_results)
-````
 
 ````python
         # Determine winning vote count, winning percentage, and candidate.
