@@ -59,6 +59,7 @@ sldkdkdkdkd
             w_county = county_name
             wcounty_percentage = countyvote_percentage   
 ````
+### Candidate Results
 
 - The candidates were:
   - Charles Casper Stockham received 23%" of the vote and 85,213 number of votes
@@ -90,6 +91,7 @@ sldkdkdkdkd
             winning_candidate = candidate_name
             winning_percentage = vote_percentage
 ````
+### Results Summary
 
 The results were tabulated through a python script and are shown in ***figure 1***.  This script reads the raw election_results.csv data file and performs a number of calculations to produce the results.  In addition this script writes the results to a results.txt file for future reference.
 
