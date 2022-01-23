@@ -60,9 +60,6 @@ The analysis of the election show that:
   - Charles Casper Stockham received 23%" of the vote and 85,213 number of votes
   - Diana DeGette received 73.8% of the vote and 272,892 number of votes
   - Raymon Anthony Doane received 3.1% of the vote and 11,606 number of votes
-  
-- The winner of the election was:
-  - Diana DeGette , who received 73.8% of the vote and 272,892 number of votes.
 
 ````python
 # Save the final candidate vote count to the text file.
@@ -78,8 +75,14 @@ The analysis of the election show that:
         # terminal.
         print(candidate_results)
         #  Save the candidate results to our text file.
-        txt_file.write(candidate_results)
+        
+  - The winner of the election was:
+  - Diana DeGette , who received 73.8% of the vote and 272,892 number of votes.
 
+txt_file.write(candidate_results)
+````
+
+````python
         # Determine winning vote count, winning percentage, and candidate.
         if (votes > winning_count) and (vote_percentage > winning_percentage):
             winning_count = votes
