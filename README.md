@@ -17,6 +17,15 @@ The Colorado Board of Elections requires a tabulation of the election results.  
 The analysis of the election show that: 
 
 - There were 369,711 votes cast in the election.
+- 
+````python
+ # For each row in the CSV file.
+    for row in reader:
+
+        # Add to the total vote count
+        total_votes = total_votes + 1
+ ````
+
 - The number of votes per county were:
   - Jefferson had 10.% of the vote and 38,855 votes
   - Denver had 82.8% of the vote and 306,055 votes.
@@ -37,7 +46,7 @@ The analysis of the election show that:
 - The winner of the election was:
   - Diana DeGette , who received 73.8% of the vote and 272,892 number of votes.
 
-The results were tabulated through a python script and are shown in ***figure 1***.  This scripted reads the raw election_results.csv data file and performs a number of calculations to produce the results.
+The results were tabulated through a python script and are shown in ***figure 1***.  This script reads the raw election_results.csv data file and performs a number of calculations to produce the results.  In addition this script writes the results to a results.txt file for future reference.
 
 ***Figure 1: Terminal Output of Election Results python script***
 
