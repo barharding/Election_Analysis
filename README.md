@@ -16,16 +16,11 @@ The Colorado Board of Elections requires a tabulation of the election results.  
 ## Election Audit Results
 The analysis of the election show that: 
 
--	There were 369,711 votes cast in the election.
--	The number of votes per county were:
-
-  -	Jefferson had 10.% of the vote and 38,855 votes
-  -	Denver had 82.8% of the vote and 306,055 votes.
-  -	Arapahoe had 6.7% of the vote and 24,801
-
-- What are some limitations of this dataset?
-  - There is no data to measure the effectiveness of the pitch (i.e. the details about what the play is about)
-  - There is no data about the methods used to market the campaign to potential kickstarter backers.  Did the founder 
+- There were 369,711 votes cast in the election.
+- The number of votes per county were:
+  - Jefferson had 10.% of the vote and 38,855 votes
+  - Denver had 82.8% of the vote and 306,055 votes.
+  - Arapahoe had 6.7% of the vote and 24,801
 
 The county with the largest turnout was Denver
 
