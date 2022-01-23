@@ -15,6 +15,9 @@ The Colorado Board of Elections requires a tabulation of the election results.  
 
 ## Election Audit Results
 The analysis of the election show that: 
+sldkdkdkdkd
+
+### Total Number of Votes Cast
 
 - There were 369,711 votes cast in the election.  This result is derived from the code below which shows a total votes variable being incremented at each row.
 
@@ -25,6 +28,7 @@ The analysis of the election show that:
         # Add to the total vote count
         total_votes = total_votes + 1
  ````
+###  Total Number of Votes by County
 
 - The number of votes per county were:
   - Jefferson had 10.% of the vote and 38,855 votes
