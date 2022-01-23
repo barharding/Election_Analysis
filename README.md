@@ -3,11 +3,11 @@
 The Colorado Board of Elections requires a tabulation of the election results.  The analysis will show:
 
 1.	The total number of votes cast.
-2.	The number of votes by county and percentage of the vote
-3.	The County with the largest turnout
+2.	The county results, showing the number of votes by county and percentage of the vote
+3.	The county with the largest turnout
 4.	A complete list of candidates who received votes.
-5.	The total number of votes each candidate received and the percentage of votes each candidate won.
-6.	The winner of the election based on popular vote.
+5.	The candidate results, showing the total number of votes each candidate received and the percentage of votes each candidate won.
+6.	The winner of the election.
 
 ## Resources
 -	Data Source: election_results.csv
@@ -20,7 +20,7 @@ This section of the report focuses on the main sections of the election results 
 ***Figure 1: Terminal Output of Election Results python script***
 ![Election Results Terminal](/resources/Terminal_Output.png)
 
-These sections of the code include:
+The main sections of the code are:
 -   Initializing and populating variables, lists and dictionaries
 -   Tabulating the total number of votes cast
 -   Tabulating the total number of votes by county
@@ -56,7 +56,7 @@ w_county =""
 wcounty_count=0
 wcounty_percentage=0
 ````
-The next major section of the code initiates a nested for loop within a with clause.  This for loop iterates through the file rows getting the total votes, candidate name and county names.  
+The next major section of the code initiates a nested **for loop** within a **with** clause.  This for loop iterates through the file rows getting the total votes, candidate name and county names.  
 
 ````python
     for row in reader:
@@ -70,12 +70,12 @@ The next major section of the code initiates a nested for loop within a with cla
         # 3: Extract the county name from each row.
         county_name = row[1]
 ````
-It then uses two if statements within the for loop.
+It then uses two **if** statements within the for loop.
 
 The first if statement:
 -   populate the candidates_options list with the candidate name and append if not found
 -   initializes the candidate_votes dictionary counter to 0
--   Adds the total # of votes to the candidate_votes dictionary per candidate as it loops
+-   Adds the total number of votes to the candidate_votes dictionary per candidate as it loops
 
 ````python
         # If the candidate does not match any existing candidate add it to
@@ -92,10 +92,10 @@ The first if statement:
         candidate_votes[candidate_name] += 1
 ````
 
-The second if statement:
+The second **if** statement:
 -   populates the county_list list with the county name
 -   initializes the county_votes dictionary counter to 0
--   Adds the total # of votes to the ounty_votes dictionary per candidate as it loops
+-   Adds the total # of votes to the county_votes dictionary per candidate as it loops
 
 ````python
 
@@ -126,14 +126,15 @@ The second if statement:
         # Add to the total vote count
         total_votes = total_votes + 1
  ````
-###  Total Number of Votes by County
+###  County Results
 
 - The number of votes per county were:
   - ***Jefferson*** had ***10.%*** of the vote and ***38,855*** votes
   - ***Denver*** had ***82.8%*** of the vote and ***306,055*** votes.
   - ***Arapahoe*** had ***6.7%*** of the vote and ***24,801*** votes.
 
-- In the code block we see a for loop being in
+- In this code block we see a **for loop** being in used to iterate and calculate the total county votes variable.  The next statement uses total county votes variable and divides it by the total votes variable calculated earlier to get the vote percentage.  The last statement then formats the results for output in the terminal
+- 
 ````python
     # 6a: Write a for loop to get the county from the county dictionary.
     for county_name in county_votes:
@@ -151,6 +152,8 @@ The second if statement:
 
 The county with the largest turnout was ***Denver***.
 
+This code block calculates the largest turnout using a conditional **if** as well as the **And** operator.  This code block is nested within a **for loop* which is iterating to calculate the county votes and percentages.  
+
 ````python
          # 6f: Write an if statement to determine the winning county and get its vote count.
         if (totalcountyvotes > wcounty_count) and (countyvote_percentage > wcounty_percentage):
@@ -164,6 +167,8 @@ The county with the largest turnout was ***Denver***.
   - ***Charles Casper Stockham*** received ***23%"*** of the vote and ***85,213*** number of votes
   - ***Diana DeGette*** received ***73.8%*** of the vote and ***272,892*** number of votes
   - ***Raymon Anthony Doane*** received ***3.1%*** of the vote and ***11,606*** number of votes
+
+This code block follows the same pattern as the one used to calculate the county results.
 
 ````python
 # Save the final candidate vote count to the text file.
