@@ -31,9 +31,9 @@ sldkdkdkdkd
 ###  Total Number of Votes by County
 
 - The number of votes per county were:
-  - Jefferson had 10.% of the vote and 38,855 votes
-  - Denver had 82.8% of the vote and 306,055 votes.
-  - Arapahoe had 6.7% of the vote and 24,801
+  - ***Jefferson*** had ***10.%*** of the vote and ***38,855*** votes
+  - ***Denver*** had ***82.8%*** of the vote and ***306,055*** votes.
+  - ***Arapahoe*** had ***6.7%*** of the vote and ***24,801*** votes.
 
 ````python
     # 6a: Write a for loop to get the county from the county dictionary.
@@ -50,7 +50,7 @@ sldkdkdkdkd
         print(county_results)
 ````
 
-- The county with the largest turnout was Denver
+The county with the largest turnout was ***Denver***.
 
 ````python
          # 6f: Write an if statement to determine the winning county and get its vote count.
@@ -62,9 +62,9 @@ sldkdkdkdkd
 ### Candidate Results
 
 - The candidates were:
-  - Charles Casper Stockham received 23%" of the vote and 85,213 number of votes
-  - Diana DeGette received 73.8% of the vote and 272,892 number of votes
-  - Raymon Anthony Doane received 3.1% of the vote and 11,606 number of votes
+  - ***Charles Casper Stockham*** received ***23%"*** of the vote and ***85,213*** number of votes
+  - ***Diana DeGette*** received ***73.8%*** of the vote and ***272,892*** number of votes
+  - ***Raymon Anthony Doane*** received ***3.1%*** of the vote and ***11,606*** number of votes
 
 ````python
 # Save the final candidate vote count to the text file.
@@ -81,8 +81,7 @@ sldkdkdkdkd
         print(candidate_results)
         #  Save the candidate results to our text file.
 ````        
-  - The winner of the election was:
-  - Diana DeGette , who received 73.8% of the vote and 272,892 number of votes.
+ The winner of the election was ***Diana DeGette*** , who received ***73.8%*** of the vote and ***272,892*** number of votes.
 
 ````python
         # Determine winning vote count, winning percentage, and candidate.
