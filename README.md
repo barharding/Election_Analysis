@@ -22,7 +22,7 @@ The analysis of the election show that:
   - Denver had 82.8% of the vote and 306,055 votes.
   - Arapahoe had 6.7% of the vote and 24,801
 
-The county with the largest turnout was Denver
+- The county with the largest turnout was Denver
 
 - The candidates were:
   - Charles Casper Stockham
@@ -36,6 +36,10 @@ The county with the largest turnout was Denver
   
 - The winner of the election was:
   - Diana DeGette , who received 73.8% of the vote and 272,892 number of votes.
+
+The results were tabulated through a python script and are shown in figure 1.  This scripted reads the raw election_results.csv data file and performs a number of calculations to produce the results.
+
+***Figure 1: Terminal Output of Election Results python script***
 
 ![Election Results Terminal](/resources/Terminal_Output.png)
 
