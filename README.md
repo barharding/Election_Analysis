@@ -18,6 +18,7 @@ The analysis of the election show that:
 
 -	There were 369,711 votes cast in the election.
 -	The number of votes per county were:
+
   -	Jefferson had 10.% of the vote and 38,855 votes
   -	Denver had 82.8% of the vote and 306,055 votes.
   -	Arapahoe had 6.7% of the vote and 24,801
