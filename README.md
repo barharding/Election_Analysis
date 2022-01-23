@@ -16,7 +16,7 @@ The Colorado Board of Elections requires a tabulation of the election results.  
 ## Election Audit Results
 The election results python script, tabulates its results from a raw data file named ***election_results.csv***.  This file contains the following three columns of data: Ballot ID, Count, and Candidate Voted for. 
 
-The first section of the script initializes a number of variables, lists & dictionaries to store values or results.  In addition, these are used in a calculations in the code.
+The first section of the script initializes a number of variables, lists & dictionaries to store values or results.  These are later used in the code for calculations.
 
 ````python
 # Initialize a total vote counter.
@@ -77,8 +77,7 @@ The first if statement:
 
         # Add a vote to that candidate's count
         candidate_votes[candidate_name] += 1
-
-```
+````
 
 The second if statement:
 -   populates the county_list list with the county name
