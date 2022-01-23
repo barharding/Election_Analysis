@@ -43,11 +43,17 @@ w_county =""
 wcounty_count=0
 wcounty_percentage=0
 ````
-The next major section of the code initiates a nested for loop within a with clause.  This for loop iterates through the file rows getting the total votes, candidate name and county names.  It then used to if statements within the for loop to 
-1. populate the candidates_options list with the candidate name
-2. populate the candidate_votes dictionary with candidate name and total number of votes
-3. populate the county_list list with the county name
-4. populate the county_votes with the county name and total number of votes
+The next major section of the code initiates a nested for loop within a with clause.  This for loop iterates through the file rows getting the total votes, candidate name and county names.  It then uses two if statements within the for loop.
+
+The first if statement:
+-   populate the candidates_options list with the candidate name and append if not found
+-   initializes the candidate_votes dictionary counter to 0
+-   Adds the total # of votes to the candidate_votes dictionary per candidate as it loops
+
+The second if statement:
+-   populates the county_list list with the county name
+-   initializes the county_votes dictionary counter to 0
+-   Adds the total # of votes to the ounty_votes dictionary per candidate as it loops
 
 ````python
     for row in reader:
