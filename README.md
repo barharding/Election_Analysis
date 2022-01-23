@@ -43,17 +43,7 @@ w_county =""
 wcounty_count=0
 wcounty_percentage=0
 ````
-The next major section of the code initiates a nested for loop within a with clause.  This for loop iterates through the file rows getting the total votes, candidate name and county names.  It then uses two if statements within the for loop.
-
-The first if statement:
--   populate the candidates_options list with the candidate name and append if not found
--   initializes the candidate_votes dictionary counter to 0
--   Adds the total # of votes to the candidate_votes dictionary per candidate as it loops
-
-The second if statement:
--   populates the county_list list with the county name
--   initializes the county_votes dictionary counter to 0
--   Adds the total # of votes to the ounty_votes dictionary per candidate as it loops
+The next major section of the code initiates a nested for loop within a with clause.  This for loop iterates through the file rows getting the total votes, candidate name and county names.  
 
 ````python
     for row in reader:
@@ -66,7 +56,15 @@ The second if statement:
 
         # 3: Extract the county name from each row.
         county_name = row[1]
+````
+It then uses two if statements within the for loop.
 
+The first if statement:
+-   populate the candidates_options list with the candidate name and append if not found
+-   initializes the candidate_votes dictionary counter to 0
+-   Adds the total # of votes to the candidate_votes dictionary per candidate as it loops
+
+````python
         # If the candidate does not match any existing candidate add it to
         # the candidate list
         if candidate_name not in candidate_options:
@@ -79,6 +77,15 @@ The second if statement:
 
         # Add a vote to that candidate's count
         candidate_votes[candidate_name] += 1
+
+```
+
+The second if statement:
+-   populates the county_list list with the county name
+-   initializes the county_votes dictionary counter to 0
+-   Adds the total # of votes to the ounty_votes dictionary per candidate as it loops
+
+````python
 
         # 4a: Write an if statement that checks that the
         # county does not match any existing county in the county list.
