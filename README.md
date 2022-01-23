@@ -11,7 +11,7 @@ The Colorado Board of Elections requires a tabulation of the election results.  
 
 ## Resources
 -	Data Source: election_results.csv
--	Software: Python 3.6.1, Visual Studio Code, l.3B.l
+-	Software: Python 3.7, Visual Studio Code, l.63.2
 
 ## Election Audit Results
 The analysis of the election show that: 
