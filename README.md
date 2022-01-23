@@ -1,12 +1,13 @@
 # Election Analysis 
 ## Overview of Election Audit 
-A Colorado Board of Elections employee has given you the following tasks to complete the election audit of a recent local congressional election.
+The Colorado Board of Elections requires a tabulation of the election results.  The analysis will show:
 
-1.	Calculate the total number of votes cast.
-2.	Get a complete list of candidates who received votes.
-3.	Calculate the total number of votes each candidate received.
-4. 	Calculate the percentage of votes each candidate won.
-5.  Determine the winner of the election based on popular vote.
+1.	The total number of votes cast.
+2.	The number of votes by county and percentage of the vote
+3.	The County with the largest turnout
+4.	A complete list of candidates who received votes.
+5.	The total number of votes each candidate received and the percentage of votes each candidate won.
+6.	The winner of the election based on popular vote.
 
 ## Resources
 -	Data Source: election_results.csv
