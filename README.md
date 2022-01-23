@@ -186,7 +186,6 @@ This code block calculates the largest turnout using a conditional **if** as wel
         #  Save the candidate results to our text file.
 ````        
 -   The winner of the election was ***Diana DeGette*** , who received ***73.8%*** of the vote and ***272,892*** number of votes.
--   
 -   This code block uses the same pattern used to determine the county with the largest turnout
 
 ````python
