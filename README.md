@@ -23,6 +23,10 @@ The analysis of the election show that:
   -	Denver had 82.8% of the vote and 306,055 votes.
   -	Arapahoe had 6.7% of the vote and 24,801
 
+- What are some limitations of this dataset?
+  - There is no data to measure the effectiveness of the pitch (i.e. the details about what the play is about)
+  - There is no data about the methods used to market the campaign to potential kickstarter backers.  Did the founder 
+
 The county with the largest turnout was Denver
 
 -	The candidates were:
