@@ -37,7 +37,7 @@ The analysis of the election show that:
 - The winner of the election was:
   - Diana DeGette , who received 73.8% of the vote and 272,892 number of votes.
 
-The results were tabulated through a python script and are shown in *figure 1*.  This scripted reads the raw election_results.csv data file and performs a number of calculations to produce the results.
+The results were tabulated through a python script and are shown in ***figure 1***.  This scripted reads the raw election_results.csv data file and performs a number of calculations to produce the results.
 
 ***Figure 1: Terminal Output of Election Results python script***
 
