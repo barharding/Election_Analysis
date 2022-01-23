@@ -15,7 +15,12 @@ The Colorado Board of Elections requires a tabulation of the election results.  
 
 ## Election Audit Results
 
-This section of the report focuses on the main sections of the python script to derive the results.  These sections include:
+This section of the report focuses on the main sections of the election results python script to derive the results shown in ***figure 1***.  In addition this script writes the results to a results.txt file for future reference.
+
+***Figure 1: Terminal Output of Election Results python script***
+![Election Results Terminal](/resources/Terminal_Output.png)
+
+These sections of the code include:
 -   Initializing and populating variables, lists and dictionaries
 -   Tabulating the total number of votes cast
 -   Tabulating the total number of votes by county
@@ -190,11 +195,6 @@ The county with the largest turnout was ***Denver***.
 ## Election Audit Summary
 In a summary statement, provide a business proposal to the election commission on how this script can be used—with some modifications—for any election. Give at least two examples of how this script can be modified to be used for other elections.
 
-### Results Summary
 
-The results were tabulated through a python script and are shown in ***figure 1***.  This script reads the raw election_results.csv data file and performs a number of calculations to produce the results.  In addition this script writes the results to a results.txt file for future reference.
-
-***Figure 1: Terminal Output of Election Results python script***
-![Election Results Terminal](/resources/Terminal_Output.png)
 
 
