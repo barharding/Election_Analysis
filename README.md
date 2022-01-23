@@ -2,12 +2,12 @@
 ## Overview of Election Audit 
 The Colorado Board of Elections requires a tabulation of the election results.  The analysis will show:
 
-1.	The total number of votes cast.
+1.	The total number of votes cast
 2.	The county results, showing the number of votes by county and percentage of the vote
 3.	The county with the largest turnout
-4.	A complete list of candidates who received votes.
-5.	The candidate results, showing the total number of votes each candidate received and the percentage of votes each candidate won.
-6.	The winner of the election.
+4.	A complete list of candidates who received votes
+5.	The candidate results, showing the total number of votes each candidate received and the percentage of votes each candidate won
+6.	The winner of the election
 
 ## Resources
 -	Data Source: election_results.csv
@@ -130,8 +130,8 @@ The second **if** statement:
 
 - The number of votes per county were:
   - ***Jefferson*** had ***10.%*** of the vote and ***38,855*** votes
-  - ***Denver*** had ***82.8%*** of the vote and ***306,055*** votes.
-  - ***Arapahoe*** had ***6.7%*** of the vote and ***24,801*** votes.
+  - ***Denver*** had ***82.8%*** of the vote and ***306,055*** votes
+  - ***Arapahoe*** had ***6.7%*** of the vote and ***24,801*** votes
 
 - In this code block we see a **for loop** being in used to iterate and calculate the total county votes variable.  The next statement uses the total county votes variable and divides it by the total votes variable calculated earlier to get the vote percentage.  The last statement then formats the results for output in the terminal
 
