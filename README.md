@@ -17,7 +17,7 @@ The Colorado Board of Elections requires a tabulation of the election results.  
 The analysis of the election show that: 
 
 - There were 369,711 votes cast in the election.
-- 
+
 ````python
  # For each row in the CSV file.
     for row in reader:
@@ -33,7 +33,7 @@ The analysis of the election show that:
 
 - The county with the largest turnout was Denver
 
-````
+````python
     # 6a: Write a for loop to get the county from the county dictionary.
     for county_name in county_votes:
         # 6b: Retrieve the county vote count.
@@ -58,17 +58,35 @@ The analysis of the election show that:
 ````
 
 - The candidates were:
-  - Charles Casper Stockham
-  - Diana DeGette
-  - Raymon Anthony Doane
-
-- The candidates were:
   - Charles Casper Stockham received 23%" of the vote and 85,213 number of votes
   - Diana DeGette received 73.8% of the vote and 272,892 number of votes
   - Raymon Anthony Doane received 3.1% of the vote and 11,606 number of votes
   
 - The winner of the election was:
   - Diana DeGette , who received 73.8% of the vote and 272,892 number of votes.
+
+````python
+# Save the final candidate vote count to the text file.
+    for candidate_name in candidate_votes:
+
+        # Retrieve vote count and percentage
+        votes = candidate_votes.get(candidate_name)
+        vote_percentage = float(votes) / float(total_votes) * 100
+        candidate_results = (
+            f"{candidate_name}: {vote_percentage:.1f}% ({votes:,})\n")
+
+        # Print each candidate's voter count and percentage to the
+        # terminal.
+        print(candidate_results)
+        #  Save the candidate results to our text file.
+        txt_file.write(candidate_results)
+
+        # Determine winning vote count, winning percentage, and candidate.
+        if (votes > winning_count) and (vote_percentage > winning_percentage):
+            winning_count = votes
+            winning_candidate = candidate_name
+            winning_percentage = vote_percentage
+````
 
 The results were tabulated through a python script and are shown in ***figure 1***.  This script reads the raw election_results.csv data file and performs a number of calculations to produce the results.  In addition this script writes the results to a results.txt file for future reference.
 
