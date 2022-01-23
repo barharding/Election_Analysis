@@ -32,7 +32,7 @@ The first section of the script initializes a number of variables, lists & dicti
 
 ````python
 # Initialize a total vote counter.
-total_votes = 0
+total_votes = 0 #total_votes is a variable used to store the Total # of votes
 
 # Initialize a county vote
 totalcounty_votes=0
