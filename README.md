@@ -19,7 +19,9 @@ sldkdkdkdkd
 
 ### Total Number of Votes Cast
 
-- There were 369,711 votes cast in the election.  This result is derived from the code below which shows a total votes variable being incremented at each row.
+- There were 369,711 votes cast in the election.  
+
+- This result is derived from the code below which shows a total votes variable being incremented at each row.
 
 ````python
  # For each row in the CSV file.
