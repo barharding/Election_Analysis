@@ -16,7 +16,7 @@ The Colorado Board of Elections requires a tabulation of the election results.  
 ## Election Audit Results
 The analysis of the election show that: 
 
-- There were 369,711 votes cast in the election.
+- There were 369,711 votes cast in the election.  This result is derived from the code below which shows a total votes variable being incremented at each row.
 
 ````python
  # For each row in the CSV file.
@@ -31,8 +31,6 @@ The analysis of the election show that:
   - Denver had 82.8% of the vote and 306,055 votes.
   - Arapahoe had 6.7% of the vote and 24,801
 
-- The county with the largest turnout was Denver
-
 ````python
     # 6a: Write a for loop to get the county from the county dictionary.
     for county_name in county_votes:
@@ -46,10 +44,11 @@ The analysis of the election show that:
         county_results = (
             f"{county_name}: {countyvote_percentage:.1f}% ({totalcountyvotes:,})\n")
         print(county_results)
+````
 
-         # 6e: Save the county votes to a text file.
-        txt_file.write(county_results)
+- The county with the largest turnout was Denver
 
+````python
          # 6f: Write an if statement to determine the winning county and get its vote count.
         if (totalcountyvotes > wcounty_count) and (countyvote_percentage > wcounty_percentage):
             wcounty_count = totalcountyvotes
